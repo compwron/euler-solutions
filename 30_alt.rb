@@ -19,3 +19,6 @@ for t in 2..999999 do
 end
 puts ans
 # 443839 is correct
+
+# someone else's ruby 1-liner
+# p (2...1_000_000).select { |e| e == e.to_s.chars.map(){|a| a.to_i**5}.inject(:+) }.inject(:+)
